@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nino Gouy">
+    <title>Nino Gouy - Graphic Designer</title>
+    <style>
+        @font-face {
+            font-family: 'Special Gothic Medium';
+            src: url('font/specialgothic_medium-s.p.1172awqsd_c2n.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        :root {
+            /* 0.97vw correspond à ~14px sur un écran de 1440px de large */
+            --adaptive-font-size: 0.90vw;
+            --min-font-size: 11px;
+            --max-font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            background-color: #fffbe3;
+            color: #373737;
+            font-family: 'Special Gothic Medium', sans-serif;
+            /* Utilisation de clamp pour garder le contrôle entre mobile et desktop */
+            font-size: clamp(var(--min-font-size), var(--adaptive-font-size), var(--max-font-size));
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        main {
+            max-width: 90vw;
+            padding: 0.8rem;
+        }
+
+        .wip-image {
+            width: 5vw; /* Taille de l'image adaptative */
+            min-width: 60px;
+            height: auto;
+            margin-top: 1.5rem;
+        }
+
+        h1 {
+            font-size: inherit;
+            font-weight: normal;
+            margin: 0 0 0 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .section-spacer {
+            margin-top: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+       
+        
+        <h1>Nino Gouy</h1>
+        <p>Freelance Art Director</p>
+
+ <img src="image/caution-wip.webp" alt="Under Construction" class="wip-image">
+
+        <p class="section-spacer">Website is under construction.<br>Portfolio under request.</p>
+
+        <div class="section-spacer">
+            <p>(+33) 6 31 38 67 70</p>
+            <p>gouynino(at)gmail.com</p>
+            <p>(at)nino.gouv</p>
+        </div>
+    </main>
+</body>
+</html>
