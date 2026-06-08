@@ -4,154 +4,92 @@ const gallery = [
         project: "Aspect Wakemag",
         imgName: "Numéro 3 Front Cover",
         src: "images/01-aspect/aspect-01.jpg",
-        desc: 'Aspect est une revue dédiée à la culture du wakeboard, explorant les dimensions esthétiques et créatives de la discipline. Chaque édition annuelle s’appuie sur une direction artistique forte, collaborant avec de nombreux photographes internationaux pour offrir une perspective visuelle unique. L’édition 2026 est disponible en versions française et anglaise. <a href="https://aspectwakemag.fr" target="_blank" style="text-decoration:underline">aspectwakemag.fr ↗</a>'
+        desc: 'Revue annuelle dédiée à la culture wakeboard. Direction artistique et mise en page. <a href="https://aspectwakemag.fr" target="_blank" style="text-decoration:underline">aspectwakemag.fr ↗</a>'
     },
-    {
+    ...Array.from({length: 7}, (_, i) => ({
         project: "Aspect Wakemag",
-        imgName: "Numéro 3 page 134-135",
-        src: "images/01-aspect/aspect-02.jpg",
-        desc: 'Revue dédiée à la culture du wakeboard, explorant les dimensions esthétiques et créatives de la discipline.'
-    },
-    {
-        project: "Aspect Wakemag",
-        imgName: "Numéro 3 page 136-137",
-        src: "images/01-aspect/aspect-03.jpg",
-        desc: 'Revue dédiée à la culture du wakeboard, explorant les dimensions esthétiques et créatives de la discipline.'
-    },
-    {
-        project: "Aspect Wakemag",
-        imgName: "Numéro 3 spread",
-        src: "images/01-aspect/aspect-04.jpg",
-        desc: 'Revue dédiée à la culture du wakeboard, explorant les dimensions esthétiques et créatives de la discipline.'
-    },
-    {
-        project: "Aspect Wakemag",
-        imgName: "Numéro 3 spread",
-        src: "images/01-aspect/aspect-05.jpg",
-        desc: 'Revue dédiée à la culture du wakeboard, explorant les dimensions esthétiques et créatives de la discipline.'
-    },
-    {
-        project: "Aspect Wakemag",
-        imgName: "Numéro 3 spread",
-        src: "images/01-aspect/aspect-06.jpg",
-        desc: 'Revue dédiée à la culture du wakeboard, explorant les dimensions esthétiques et créatives de la discipline.'
-    },
-    {
-        project: "Aspect Wakemag",
-        imgName: "Numéro 3 spread",
-        src: "images/01-aspect/aspect-07.jpg",
-        desc: 'Revue dédiée à la culture du wakeboard, explorant les dimensions esthétiques et créatives de la discipline.'
-    },
-    {
-        project: "Aspect Wakemag",
-        imgName: "Numéro 3 spread",
-        src: "images/01-aspect/aspect-08.jpg",
-        desc: 'Revue dédiée à la culture du wakeboard, explorant les dimensions esthétiques et créatives de la discipline.'
-    },
+        imgName: `Numéro 3 spread ${i + 2}`,
+        src: `images/01-aspect/aspect-0${i + 2}.jpg`,
+        desc: 'Direction artistique et mise en page pour l’édition 2026.'
+    })),
     // PROJET 2
     {
         project: "Nike Signalétique Showroom",
         imgName: "swoosh details",
         src: "images/02-sp26/sp26-1.jpg",
-        desc: 'Conception de la signalétique et de la scénographie du showroom parisien de Nike (300 m²). Le dispositif repose sur un système modulaire composé de structures en acier brut et de panneaux interchangeables. Une typographie sur mesure, inspirée de l’ossature métallique des modules, prolonge cette identité dans l’espace, en signalétique comme en ambiance. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
+        desc: 'Signalétique et scénographie du showroom Nike Paris (300 m²). Système modulaire et typographie sur mesure. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
     },
-    {
-        project: "Nike Signalétique Showroom",
-        imgName: "showroom panel",
-        src: "images/02-sp26/sp26-2.jpg",
-        desc: 'Une typographie sur mesure, inspirée de l’ossature métallique des modules, prolonge cette identité dans l’espace, en signalétique comme en ambiance.'
-    },
-    {
-        project: "Nike Signalétique Showroom",
-        imgName: "Custom font",
-        src: "images/02-sp26/sp26-3.gif",
-        desc: 'Une typographie sur mesure, inspirée de l’ossature métallique des modules, prolonge cette identité dans l’espace, en signalétique comme en ambiance.'
-    },
-    {
-        project: "Nike Signalétique Showroom",
-        imgName: "detail photo",
-        src: "images/02-sp26/sp26-4.jpg",
-        desc: 'Conception de la signalétique et de la scénographie du showroom parisien de Nike. Une typographie sur mesure, inspirée de l’ossature métallique des modules, prolonge cette identité dans l’espace, en signalétique comme en ambiance.'
-    },
-    {
-        project: "Nike Signalétique Showroom",
-        imgName: "detail photo",
-        src: "images/02-sp26/sp26-5.jpg",
-        desc: 'Conception de la signalétique et de la scénographie du showroom parisien de Nike. Une typographie sur mesure, inspirée de l’ossature métallique des modules, prolonge cette identité dans l’espace, en signalétique comme en ambiance.'
-    },
-    {
-        project: "Nike Signalétique Showroom",
-        imgName: "detail photo",
-        src: "images/02-sp26/sp26-6.gif",
-        desc: 'Conception de la signalétique et de la scénographie du showroom parisien de Nike. Une typographie sur mesure, inspirée de l’ossature métallique des modules, prolonge cette identité dans l’espace, en signalétique comme en ambiance.'
-    },
-    // PROJET 3 - Revue Quete (11 images)
-    ...Array.from({length: 11}, (_, i) => ({
-        project: "Revue Quête",
-        imgName: `Quête spread ${i + 1}`,
-        src: `images/03-quete/quete-${i + 1}.jpg`,
-        desc: 'Revue mensuelle dédiée à l’exploration du design par le prisme de la friction et de l’opposition. Quête met en lumière le contraste entre le travail de créatifs engagés — mobilisant le design à des fins sociales ou politiques — et des projets esthétiques dépourvus de sens. Cette mise en tension analytique interroge le rôle des communicants et l’impact de leur pratique sur la société contemporaine.'
-    })),
-    // PROJET 4 - Carte de voeux (5 images)
     ...Array.from({length: 5}, (_, i) => ({
-        project: "Carte de Vœux 2025",
+        project: "Nike Signalétique Showroom",
+        imgName: `Showroom detail ${i + 2}`,
+        src: `images/02-sp26/sp26-${i + 2}.${(i + 2 === 3 || i + 2 === 6) ? 'gif' : 'jpg'}`,
+        desc: 'Système de signalétique et typographie sur mesure.'
+    })),
+    // PROJET 3 - Carte de voeux (5 images)
+    ...Array.from({length: 5}, (_, i) => ({
+        project: "Carte de vœux 2025",
         imgName: `Vœux 2025 - ${i + 1}`,
         src: `images/04-cdv-25/cdv-${i + 1}.jpg`,
-        desc: 'Conception d’un objet graphique participatif pour l’année 2025. Cette carte de vœux invite le destinataire à s’approprier le support par une intervention directe, transformant l’imprimé en une pièce personnalisée. Le concept valorise l’interaction et la projection individuelle au seuil d’une nouvelle année.'
+        desc: 'Objet graphique participatif basé sur l’appropriation du support par le destinataire.'
     })),
-    // PROJET 5 - Artemis (5 images)
+    // PROJET 4 - Nike x FFF (5 images)
+    ...Array.from({length: 5}, (_, i) => ({
+        project: "Nike x FFF — footamateur.fff.fr",
+        imgName: `FFF - ${i + 1}`,
+        src: `images/06-footamateur/fff-${i + 1}.jpg`,
+        desc: 'Direction artistique et création de contenus pour footamateur.fff.fr. Séries photos et système graphique. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
+    })),
+    // PROJET 5 - Revue Quête (11 images)
+    ...Array.from({length: 11}, (_, i) => ({
+        project: "Revue Quête (N°1 — Juillet 2025)",
+        imgName: `Quête spread ${i + 1}`,
+        src: `images/03-quete/quete-${i + 1}.jpg`,
+        desc: 'Conception globale : écriture, interviews, ligne éditoriale et design graphique. Analyse critique de l’impact social du design.'
+    })),
+    // PROJET 6 - Yohan Nilias (4 images)
+    ...Array.from({length: 4}, (_, i) => ({
+        project: "Yohan Nilias",
+        imgName: `YN - ${i + 1}`,
+        src: `images/07-yn/yn-${i + 1}.jpg`,
+        desc: 'Design graphique du pro-model 2025 pour l’athlète Yohan Nilias.'
+    })),
+    // PROJET 7 - Nike Paris Marathon (4 images)
+    ...Array.from({length: 4}, (_, i) => ({
+        project: "Nike Paris Marathon",
+        imgName: `PM24 - ${i + 1}`,
+        src: `images/10-pm24/pm24-${i + 1}.jpg`,
+        desc: 'Campagne interne pour le Marathon pour Tous (Paris 2024). Visuels sur la préparation athlétique. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
+    })),
+    // PROJET 8 - Artemis (5 images)
     ...Array.from({length: 5}, (_, i) => ({
         project: "Artem'is",
         imgName: `Artemis - ${i + 1}`,
         src: `images/05-artemis/artemis-${i + 1}.jpg`,
-        desc: 'Identité visuelle et accompagnement global pour Artem’is, société spécialisée dans la location d’œuvres d’art. Le projet s’articule autour d’un logotype sur mesure reflétant un univers haut de gamme. La mission s’est étendue à la conception d’un système de supports imprimés — papeterie et catalogues — assurant une cohérence graphique rigoureuse sur l’ensemble des points de contact.'
-    })),
-    // PROJET 6 - Footamateur (5 images)
-    ...Array.from({length: 5}, (_, i) => ({
-        project: "footamateur.fff.fr",
-        imgName: `FFF - ${i + 1}`,
-        src: `images/06-footamateur/FFF-${i + 1}.jpg`,
-        desc: 'Direction artistique et production de contenus visuels pour la plateforme footamateur.fff.fr de la Fédération Française de Football. L’intervention porte sur la redynamisation de l’image du support à travers des séries photographiques et un système graphique inspiré des codes du football amateur. Le projet intègre une déclinaison spécifique aux couleurs du club de Saint-Germain-lès-Arpajon. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a> <br><br> <a href="https://midiquinze.com/projets/nike-x-fff-footamateur-fff-fr/" target="_blank" style="text-decoration:underline">full project here ↗</a>'
-    })),
-    // PROJET 7 - Yohan Nilias (4 images)
-    ...Array.from({length: 4}, (_, i) => {
-        return {
-        project: "Yohan Nilias",
-        imgName: `YN - ${i + 1}`,
-        src: `images/07-yn/yn-${i + 1}.jpg`,
-        desc: 'Conception graphique du pro-model 2025 pour l’athlète Yohan Nilias. Le design propose une identité visuelle forte et singulière, pensée pour s’intégrer aux contraintes techniques et esthétiques de l’équipement professionnel.'
-        };
-    }),
-    // PROJET 8 - Legendre (4 images)
-    ...Array.from({length: 4}, (_, i) => ({
-        project: "Legendre Automobile",
-        imgName: `Legendre - ${i + 1}`,
-        src: `images/08-lgd/lgd-${i + 1}.jpg`,
-        desc: 'Développement de l’identité visuelle de Legendre Automobile. Le projet s’appuie sur la création d’un logotype dessiné sur mesure, soulignant l’expertise et la rigueur de cet atelier de mécanique. L’identité a fait l’objet de déclinaisons sur divers supports de communication et outils opérationnels adaptés.'
+        desc: 'Identité visuelle, logotype et supports imprimés (papeterie, catalogues) pour une société de location d’œuvres d’art.'
     })),
     // PROJET 9 - Napkey (8 images)
     ...Array.from({length: 8}, (_, i) => {
         const ext = (i + 1 === 5 || i + 1 === 6) ? 'gif' : 'jpg';
         return {
-        project: "Napkey Instrument™",
+        project: "Napkey Instruments™",
         imgName: `Napkey - ${i + 1}`,
         src: `images/09-napkey/napkey-${i + 1}.${ext}`,
-        desc: 'Conception de l’identité visuelle pour Napkey Instruments à l’occasion du lancement du Napkey Chord, interface dédiée à la création musicale intuitive. L’intervention comprend la création d’un logotype et d’une charte graphique globale. Le système visuel a été déployé sur une variété de supports digitaux et imprimés, affirmant un positionnement moderne et technologique. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
+        desc: 'Identité visuelle pour le lancement du Napkey Chord™. Logotype, charte graphique et supports digitaux/print. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
         };
     }),
-    // NIKE PARIS MARATHON 24 (4 images)
+    // PROJET 10 - Legendre (4 images)
     ...Array.from({length: 4}, (_, i) => ({
-        project: "Nike Paris Marathon 24",
-        imgName: `PM24 - ${i + 1}`,
-        src: `images/10-pm24/pm24-${i + 1}.jpg`,
-        desc: 'Conception graphique réalisée pour une campagne de communication interne Nike à l’occasion du Marathon pour Tous (Paris 2024). Le projet accompagne le récit d’une préparation athlétique authentique, valorisant une vision inclusive de la performance et de l’engagement sportif. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
+        project: "Legendre Automobile",
+        imgName: `Legendre - ${i + 1}`,
+        src: `images/08-lgd/lgd-${i + 1}.jpg`,
+        desc: 'Identité visuelle et logotype sur mesure pour un atelier de mécanique.'
     })),
-    // SUNBURNING (4 images)
+    // PROJET 11 - SUNBURNING (4 images)
     ...Array.from({length: 4}, (_, i) => ({
         project: "Sun Burning",
         imgName: `Sunburning - ${i + 1}`,
         src: `images/11-sun-burning/${i + 1}.jpg`,
-        desc: 'Série de graphismes réalisée pour un court-métrage en collaboration avec Maïssane Dia-Deverre. Le projet s’articule autour d’une recherche visuelle spécifique visant à accompagner l’univers narratif du film. Collaboration : <a href="https://www.instagram.com/maissane.ddv/" target="_blank" style="text-decoration:underline">Maïssane Dia-Deverre ↗</a> <br><br> <a href="https://www.instagram.com/p/DY10fuiklKv/?img_index=3" target="_blank" style="text-decoration:underline">full project here ↗</a>'
+        desc: 'Série de graphismes pour un court-métrage en collaboration avec Maïssane Dia-Deverre. <br> <a href="https://www.instagram.com/p/DY10fuiklKv/?img_index=3" target="_blank" style="text-decoration:underline">full project here ↗</a>'
     }))
 ];
 

@@ -214,7 +214,8 @@ body {
         right: 15px;
         width: auto; /* Pour que la marge droite soit égale à la gauche (15px) */
         height: calc(100vh - 30px);
-        justify-content: flex-end; /* Pousse tout le contenu vers le bas */
+        flex-direction: column-reverse;
+        justify-content: flex-start; /* Dans column-reverse, flex-start est le bas */
         pointer-events: none; /* Évite de bloquer les clics sur le menu derrière */
     }
     .portfolio-container > * {
