@@ -89,7 +89,7 @@ const gallery = [
         project: "Sun Burning",
         imgName: `Sunburning - ${i + 1}`,
         src: `images/11-sun-burning/${i + 1}.jpg`,
-        desc: 'Série de graphismes pour un court-métrage en collaboration avec Maïssane Dia-Deverre. <br> <a href="https://www.instagram.com/p/DY10fuiklKv/?img_index=3" target="_blank" style="text-decoration:underline">full project here ↗</a>'
+        desc: 'Série de graphismes pour un court-métrage en collaboration avec Maïssane Dia-Deverre.<a href="https://www.instagram.com/p/DY10fuiklKv/?img_index=3" target="_blank" style="text-decoration:underline">full project here ↗</a>'
     }))
 ];
 
