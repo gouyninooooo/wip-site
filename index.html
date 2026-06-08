@@ -3,80 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nino Gouy">
-    <title>Nino Gouy</title>
-    <style>
-        @font-face {
-            font-family: 'Special Gothic Medium';
-            src: url('font/specialgothic_medium-s.p.1172awqsd_c2n.ttf') format('truetype');
-            font-weight: 500;
-            font-style: normal;
-        }
-
-        :root {
-            /* 0.97vw correspond à ~14px sur un écran de 1440px de large */
-            --adaptive-font-size: 0.90vw;
-            --min-font-size: 11px;
-            --max-font-size: 16px;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            min-height: 100vh;
-            background-color: #ffffff;
-            color: #373737;
-            font-family: 'Special Gothic Medium', sans-serif;
-            /* Utilisation de clamp pour garder le contrôle entre mobile et desktop */
-            font-size: clamp(var(--min-font-size), var(--adaptive-font-size), var(--max-font-size));
-            line-height: 1;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        main {
-            max-width: 90vw;
-            padding: 0.8rem;
-        }
-
-        .wip-image {
-            width: 5vw; /* Taille de l'image adaptative */
-            min-width: 60px;
-            height: auto;
-            margin-top: 1.5rem;
-        }
-
-        h1 {
-            font-size: inherit;
-            font-weight: normal;
-            margin: 0 0 0 0;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        .section-spacer {
-            margin-top: 1.3rem;
-        }
-    </style>
+    <title>Nino Gouy - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-       
+
+    <nav class="main-nav">
+        <span>Nino Gouy</span>
+        <span>Graphic Designer</span>
         
-        <h1>Nino Gouy</h1>
-        <p>Freelance Art Director</p>
-
- <img src="image/caution-wip.webp" alt="Under Construction" class="wip-image">
-
-        <p class="section-spacer">Website under construction.<br>Portfolio available upon request.</p>
-
-        <div class="section-spacer">
-            <p>(+33) 6 31 38 67 70</p>
-            <p>gouynino(at)gmail.com</p>
-            <p>(at)nino.gouv</p>
+        <span class="nav-btn indent-1 section-toggle" data-target="about-list">/About</span>
+        <div id="about-list" class="nav-subgroup hidden">
+            <span class="indent-2 nav-text nav-text-indent">Ma pratique s’articule autour du design graphique, de la typographie et de la direction artistique. Je privilégie une approche rationnelle basée sur la manipulation de formes simples et un travail typographique rigoureux, afin de donner puissance et sens à chaque projet. <br> <br>Depuis 2024, je développe Aspect wakemag en tant que directeur artistique. Auparavant, j'ai travaillé avec des studios renommés tels que <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">Midi:Quinze↗</a>, ou des agences internationales comme <a href="https://www.dragonrouge.com/fr/" target="_blank" style="text-decoration:underline">Dragon Rouge↗</a></span>
+            <span class="nav-btn indent-2 section-toggle" data-target="clients-list">/Selected Client</span>
+            <div id="clients-list" class="nav-info-list indent-3 hidden">
+                <span>Aspect Wakemag</span><span>Cabourg Mon Amour Festival</span><span>Courir</span><span>Fédération Française de Football</span><span>Franco Teens Film Festival</span><span>Jordan</span><span>La Meinau</span><span>Napkey Instruments</span><span>Nike</span><span>Nike Football</span><span>Nike Tennis</span><span>Oreca Store</span><span>Racing Club de Strasbourg</span>
+            </div>
+            <span class="nav-btn indent-2 section-toggle" data-target="exhib-list">/Exhibition and Parution</span>
+            <div id="exhib-list" class="nav-info-list indent-3 hidden">
+                <span>L'école du non-savoir, Ruedi Baur 2025</span>
+                <span>Porto Graphic Design Biennale, 2025</span>
+                <span>Musée d' Histoires Naturelles Paris, 2025</span>
+                <span>Miam Magzine issue 10 "l'habitat"</span>
+            </div>
         </div>
+        
+        <span class="nav-btn indent-1 section-toggle" data-target="works-list">/Selected Works</span>
+        <div id="works-list" class="nav-subgroup hidden">
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="0">/Aspect</span>
+                <div class="menu-description hidden"></div>
+            </div>
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="8">/Nike Signaletique Showroom</span>
+                <div class="menu-description hidden"></div>
+            </div>
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="14">/Revue Quête</span>
+                <div class="menu-description hidden"></div>
+            </div>
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="25">/Carte de Vœux 2025</span>
+                <div class="menu-description hidden"></div>
+            </div>
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="30">/Artem'is</span>
+                <div class="menu-description hidden"></div>
+            </div>
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="35">/footamateur.fff.fr</span>
+                <div class="menu-description hidden"></div>
+            </div>
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="40">/Yohan Nilias</span>
+                <div class="menu-description hidden"></div>
+            </div>
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="44">/Legendre Automobile</span>
+                <div class="menu-description hidden"></div>
+            </div>
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="48">/Napkey Instrument™</span>
+                <div class="menu-description hidden"></div>
+            </div>
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="56">/Nike Paris Marathon 24</span>
+                <div class="menu-description hidden"></div>
+            </div>
+            <div class="project-item">
+                <span class="nav-btn project-link indent-2" data-start="60">/Sun Burning</span>
+                <div class="menu-description hidden"></div>
+            </div>
+        </div>
+        
+        <span class="nav-btn indent-1 section-toggle" data-target="contact-list">/Contact</span>
+        <div id="contact-list" class="nav-subgroup hidden">
+            <span class="nav-btn indent-2 phone-btn"><span>(+33) 6 31 38 67 70</span></span>
+            <span class="nav-btn indent-2">gouynino(a)gmail.com</span>
+            <a href="https://www.instagram.com/nino.gouv/" target="_blank" class="nav-btn indent-2">(a)nino.gouv ↗</a>
+        </div>
+    </nav>
+
+    <main class="portfolio-container initial-hidden">
+        <div class="image-wrapper" id="image-clickzone">
+            <img src="" alt="" id="main-image" loading="lazy">
+        </div>
+        <div id="image-counter"></div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
