@@ -4,7 +4,7 @@ const gallery = [
         project: "Aspect Wakemag",
         imgName: "Numéro 3 Front Cover",
         src: "images/01-aspect/aspect-01.jpg",
-        desc: 'Revue annuelle dédiée à la culture wakeboard. Direction artistique et mise en page. <a href="https://aspectwakemag.fr" target="_blank" style="text-decoration:underline">aspectwakemag.fr ↗</a>'
+        desc: 'Revue annuelle dédiée à la culture wakeboard. Direction artistique et mise en page de l’édition 2026. <a href="https://aspectwakemag.fr" target="_blank" style="text-decoration:underline">aspectwakemag.fr ↗</a>'
     },
     ...Array.from({length: 7}, (_, i) => ({
         project: "Aspect Wakemag",
@@ -17,34 +17,34 @@ const gallery = [
         project: "Nike Signalétique Showroom",
         imgName: "swoosh details",
         src: "images/02-sp26/sp26-1.jpg",
-        desc: 'Signalétique et scénographie du showroom Nike Paris (300 m²). Système modulaire et typographie sur mesure. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
+        desc: 'Conception de la signalétique et scénographie du showroom Nike Paris (300m²). Système modulaire en acier et typographie sur mesure. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">Midi:Quinze ↗</a>'
     },
     ...Array.from({length: 5}, (_, i) => ({
         project: "Nike Signalétique Showroom",
         imgName: `Showroom detail ${i + 2}`,
         src: `images/02-sp26/sp26-${i + 2}.${(i + 2 === 3 || i + 2 === 6) ? 'gif' : 'jpg'}`,
-        desc: 'Système de signalétique et typographie sur mesure.'
+        desc: 'Système de signalétique modulaire et typographie personnalisée.'
     })),
     // PROJET 3 - Carte de voeux (5 images)
     ...Array.from({length: 5}, (_, i) => ({
         project: "Carte de vœux 2025",
         imgName: `Vœux 2025 - ${i + 1}`,
         src: `images/04-cdv-25/cdv-${i + 1}.jpg`,
-        desc: 'Objet graphique participatif basé sur l’appropriation du support par le destinataire.'
+        desc: 'Objet graphique participatif invitant le destinataire à s’approprier le support par une intervention directe.'
     })),
     // PROJET 4 - Nike x FFF (5 images)
     ...Array.from({length: 5}, (_, i) => ({
         project: "Nike x FFF — footamateur.fff.fr",
         imgName: `FFF - ${i + 1}`,
         src: `images/06-footamateur/fff-${i + 1}.jpg`,
-        desc: 'Direction artistique et création de contenus pour footamateur.fff.fr. Séries photos et système graphique. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
+        desc: 'Direction artistique et production de contenus pour footamateur.fff.fr. Système graphique inspiré du football amateur. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">Midi:Quinze ↗</a>'
     })),
     // PROJET 5 - Revue Quête (11 images)
     ...Array.from({length: 11}, (_, i) => ({
         project: "Revue Quête (N°1 — Juillet 2025)",
         imgName: `Quête spread ${i + 1}`,
         src: `images/03-quete/quete-${i + 1}.jpg`,
-        desc: 'Conception globale : écriture, interviews, ligne éditoriale et design graphique. Analyse critique de l’impact social du design.'
+        desc: 'Revue explorant le design par le prisme de la friction. Écriture, interviews, ligne éditoriale et conception graphique (N°1). Analyse de l’impact social et politique de la pratique créative.'
     })),
     // PROJET 6 - Yohan Nilias (4 images)
     ...Array.from({length: 4}, (_, i) => ({
@@ -58,14 +58,14 @@ const gallery = [
         project: "Nike Paris Marathon",
         imgName: `PM24 - ${i + 1}`,
         src: `images/10-pm24/pm24-${i + 1}.jpg`,
-        desc: 'Campagne interne pour le Marathon pour Tous (Paris 2024). Visuels sur la préparation athlétique. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
+        desc: 'Campagne interne pour le Marathon pour Tous (Paris 2024). Visuels sur la préparation athlétique. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">Midi:Quinze ↗</a>'
     })),
     // PROJET 8 - Artemis (5 images)
     ...Array.from({length: 5}, (_, i) => ({
         project: "Artem'is",
         imgName: `Artemis - ${i + 1}`,
         src: `images/05-artemis/artemis-${i + 1}.jpg`,
-        desc: 'Identité visuelle, logotype et supports imprimés (papeterie, catalogues) pour une société de location d’œuvres d’art.'
+        desc: 'Identité visuelle et logotype pour une société de location d’œuvres d’art haut de gamme. Conception de papeterie et catalogues.'
     })),
     // PROJET 9 - Napkey (8 images)
     ...Array.from({length: 8}, (_, i) => {
@@ -74,7 +74,7 @@ const gallery = [
         project: "Napkey Instruments™",
         imgName: `Napkey - ${i + 1}`,
         src: `images/09-napkey/napkey-${i + 1}.${ext}`,
-        desc: 'Identité visuelle pour le lancement du Napkey Chord™. Logotype, charte graphique et supports digitaux/print. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">midi:quinze ↗</a>'
+        desc: 'Identité visuelle pour le lancement du Napkey Chord™. Logotype, charte graphique et supports digitaux/print. Agence : <a href="https://midiquinze.com/" target="_blank" style="text-decoration:underline">Midi:Quinze ↗</a>'
         };
     }),
     // PROJET 10 - Legendre (4 images)
@@ -82,14 +82,14 @@ const gallery = [
         project: "Legendre Automobile",
         imgName: `Legendre - ${i + 1}`,
         src: `images/08-lgd/lgd-${i + 1}.jpg`,
-        desc: 'Identité visuelle et logotype sur mesure pour un atelier de mécanique.'
+        desc: 'Identité visuelle et logotype sur mesure pour un atelier de mécanique automobile.'
     })),
     // PROJET 11 - SUNBURNING (4 images)
     ...Array.from({length: 4}, (_, i) => ({
         project: "Sun Burning",
         imgName: `Sunburning - ${i + 1}`,
         src: `images/11-sun-burning/${i + 1}.jpg`,
-        desc: 'Série de graphismes pour un court-métrage en collaboration avec Maïssane Dia-Deverre.<a href="https://www.instagram.com/p/DY10fuiklKv/?img_index=3" target="_blank" style="text-decoration:underline">full project here ↗</a>'
+        desc: 'Recherche visuelle et série de graphismes pour un court-métrage en collaboration avec Maïssane Dia-Deverre. <a href="https://www.instagram.com/p/DY10fuiklKv/?img_index=3" target="_blank" style="text-decoration:underline">full project here ↗</a>'
     }))
 ];
 

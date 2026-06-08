@@ -214,8 +214,9 @@ body {
         right: 15px;
         width: auto; /* Pour que la marge droite soit égale à la gauche (15px) */
         height: calc(100vh - 30px);
-        flex-direction: column-reverse;
-        justify-content: flex-start; /* Dans column-reverse, flex-start est le bas */
+        display: flex;
+        flex-direction: column-reverse; /* Inverse l'ordre : compteur en haut, image en bas */
+        justify-content: flex-start; /* Aligne le tout vers le bas de l'écran */
         pointer-events: none; /* Évite de bloquer les clics sur le menu derrière */
     }
     .portfolio-container > * {
