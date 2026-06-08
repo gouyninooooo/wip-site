@@ -179,11 +179,8 @@ projectLinks.forEach(link => {
         // Affiche la description sous le projet cliqué
         const descDiv = link.nextElementSibling;
         
-        // Alternative plus robuste : trouver l'index par le nom du projet
-        const projectName = link.textContent.replace('/', '');
-        const foundIndex = gallery.findIndex(item => item.project.toLowerCase().includes(projectName.toLowerCase()));
-        
-        currentIndex = foundIndex !== -1 ? foundIndex : parseInt(e.target.getAttribute('data-start'));
+        // On utilise uniquement data-start pour éviter tout décalage
+        currentIndex = parseInt(link.getAttribute('data-start'));
 
         updateGallery(currentIndex);
 
